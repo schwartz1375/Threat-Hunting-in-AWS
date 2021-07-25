@@ -59,7 +59,7 @@ def main():
 			'StopLogging', 'DeleteTrail', 'UpdateTrail', 'MissingTrail', 'PutEventSelectors', 'DeleteGroupPolicy', 'DeleteRole', 
 			'DeleteRolePolicy', 'DeleteUserPolicy', 'PutGroupPolicy', 'PutRolePolicy', 'PutUserPolicy', 'CreatePolicyVersion', 
 			'SetDefaultPolicyVersion', 'CreateAccessKey', 'CreateLoginProfile', 'UpdateLoginProfile', 'AttachGroupPolicy', 
-			'AttachRolePolicy', 'AddUserToGroup', 'UpdateAssumeRolePolicy', 'DeactivateMFADevice']
+			'AttachRolePolicy', 'AddUserToGroup', 'UpdateAssumeRolePolicy', 'DeactivateMFADevice', 'DeleteRolePermissionsBoundary']
 
 	print("Attempting to get events from CloudTrail")
 	for eventName in events:
