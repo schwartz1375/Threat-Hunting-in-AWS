@@ -23,7 +23,7 @@ For example looking for access secret in Secrets Manager
 ```
 gunzip -c *.json.gz | jq -cr '.Records[]| select(.eventName == "GetSecretValue")'
 ```
-For more examples see the Medium article on [Quick and Dirty CloudTrail Threat Hunting Log Analysis](https://medium.com/@george.fekkas/quick-and-dirty-cloudtrail-threat-hunting-log-analysis-b64af10ef923)
+For more examples see the Medium article on the [Quick and Dirty CloudTrail Threat Hunting Log Analysis](https://medium.com/@george.fekkas/quick-and-dirty-cloudtrail-threat-hunting-log-analysis-b64af10ef923)
 
 Note that a GuardDuty finding or CloudTrail log entry showing a HIDDEN_DUE_TO_SECURITY_REASONS is because AWS doesn’t log username for failed sign-in due to an incorrect user name. 
 
@@ -44,3 +44,4 @@ This is by no means an exhaustive list of API calls (for example, one might want
 ## Additional Resources
 * [AWS Incident Response with Athena](https://easttimor.github.io/aws-incident-response/)
 * [Threat Hunting with CloudTrail and GuardDuty in SPlunk](https://www.chrisfarris.com/post/reinforce-threat-hunting/)
+* [SEC339 at re:Invent 2019](https://www.chrisfarris.com/post/reinvent2019-sec339/)
