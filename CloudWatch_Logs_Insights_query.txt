@@ -1,0 +1,63 @@
+filter (
+      eventName="AttachInternetGateway" or 
+      eventName="CreateVpcPeeringConnection" or
+      eventName="AcceptVpcPeeringConnection" or
+      eventName="CreateClientVpnEndpoint" or
+      eventName="AssociateRouteTable" or 
+      eventName="CreateRoute" or 
+      eventName="DeleteCustomerGateway" or 
+      eventName="DeleteInternetGateway" or 
+      eventName="DeleteRoute" or 
+      eventName="DeleteDhcpOptions" or 
+      eventName="DisassociateRouteTable" or 
+      eventName="CreateNetworkAcl" or 
+      eventName="CreateNetworkAclEntry" or 
+      eventName="DeleteNetworkACL" or 
+      eventName="ReplaceNetworkAclEntry" or 
+      eventName="ReplaceNetworkAclAssociation" or 
+      eventName="AuthorizeSecurityGroupIngress" or 
+      eventName="AuthorizeSecurityGroupEgress" or 
+      eventName="RevokeSecurityGroupEgress" or 
+      eventName="CreateSecurityGroup" or 
+      eventName="DeleteSecurityGroup" or 
+      eventName="DeleteNetworkAclEntry" or 
+      eventName="StopLogging" or 
+      eventName="DeleteTrail" or 
+      eventName="UpdateTrail" or 
+      eventName="MissingTrail" or 
+      eventName="PutEventSelectors" or 
+      eventName="DeleteGroupPolicy" or 
+      eventName="DeleteRole" or 
+      eventName="DeleteRolePolicy" or 
+      eventName="DeleteUserPolicy" or 
+      eventName="PutGroupPolicy" or 
+      eventName="PutRolePolicy" or 
+      eventName="PutUserPolicy" or 
+      #Privilege-escalation Rhino Security Labs
+      eventName="CreatePolicyVersion" or  
+      eventName="SetDefaultPolicyVersion" or 
+      eventName="CreateAccessKey" or 
+      eventName="CreateLoginProfile" or 
+      eventName="UpdateLoginProfile" or 
+      eventname="AttachUserPolicy" or 
+      eventName="AttachGroupPolicy" or 
+      eventName="AttachRolePolicy" or 
+      eventName="AddUserToGroup" or 
+      eventName="UpdateAssumeRolePolicy" or 
+      #GuardDuty
+      eventName="DeleteDetector" or
+      eventName="DeleteMembers" or
+      eventName="DisassociateFromMasterAccount" or
+      eventName="DisassociateMembers" or
+      eventName="StopMonitoringMembers" or
+      #General Hygiene 
+      eventName="DeactivateMFADevice" or 
+      eventName="DeleteRolePermissionsBoundary") and sourceIPAddress not like /([a-z0-9]+[.])*amazonaws[.]com$/ | 
+fields 
+      eventTime as Timestamp, 
+      eventName as APICall, 
+      userIdentity.arn as Caller, 
+      replace(replace(strcontains(userIdentity.type, "IAMUser"), "1", "True"), "0", "False") as isIAMUser, sourceIPAddress as IPAddress, 
+      userAgent as UserAgent,
+      awsRegion as Region | 
+sort eventTime desc
