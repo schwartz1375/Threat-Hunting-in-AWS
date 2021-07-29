@@ -52,14 +52,16 @@ def main():
 	endtime = datetime.datetime.now()
 	starttime = endtime - interval
 	eventlist = []
-	events = ['AttachInternetGateway', 'AssociateRouteTable', 'CreateRoute', 'DeleteCustomerGateway', 'DeleteInternetGateway',
+	events = ['AttachInternetGateway', 'CreateVpcPeeringConnection', 'AcceptVpcPeeringConnection', 'CreateClientVpnEndpoint',
+			'AssociateRouteTable', 'CreateRoute', 'DeleteCustomerGateway', 'DeleteInternetGateway',
 			'DeleteRoute', 'DeleteDhcpOptions', 'DisassociateRouteTable', 'CreateNetworkAcl', 'CreateNetworkAclEntry', 
 			'DeleteNetworkACL', 'ReplaceNetworkAclEntry', 'ReplaceNetworkAclAssociation', 'AuthorizeSecurityGroupIngress',
-			'AuthorizeSecurityGroupEgress', 'RevokeSecurityGroupEgress', 'CreateSecurityGroup', 'DeleteSecurityGroup', 
+			'AuthorizeSecurityGroupEgress', 'RevokeSecurityGroupEgress', 'CreateSecurityGroup', 'DeleteSecurityGroup', 'DeleteNetworkAclEntry',
 			'StopLogging', 'DeleteTrail', 'UpdateTrail', 'MissingTrail', 'PutEventSelectors', 'DeleteGroupPolicy', 'DeleteRole', 
 			'DeleteRolePolicy', 'DeleteUserPolicy', 'PutGroupPolicy', 'PutRolePolicy', 'PutUserPolicy', 'CreatePolicyVersion', 
 			'SetDefaultPolicyVersion', 'CreateAccessKey', 'CreateLoginProfile', 'UpdateLoginProfile', 'AttachGroupPolicy', 
-			'AttachRolePolicy', 'AddUserToGroup', 'UpdateAssumeRolePolicy', 'DeactivateMFADevice', 'DeleteRolePermissionsBoundary']
+			'AttachRolePolicy', 'AddUserToGroup', 'UpdateAssumeRolePolicy', 'DeleteDetector', 'DeleteMembers', 'DisassociateFromMasterAccount',
+			'DisassociateMembers', 'StopMonitoringMembers', 'DeactivateMFADevice', 'DeleteRolePermissionsBoundary']
 
 	print("Attempting to get events from CloudTrail")
 	for eventName in events:
