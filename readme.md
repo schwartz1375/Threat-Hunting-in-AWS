@@ -43,5 +43,5 @@ This is by no means an exhaustive list of API calls (for example, one might want
 
 ## Additional Resources
 * [AWS Incident Response with Athena](https://easttimor.github.io/aws-incident-response/)
-* [Threat Hunting with CloudTrail and GuardDuty in SPlunk](https://www.chrisfarris.com/post/reinforce-threat-hunting/)
+* [Threat Hunting with CloudTrail and GuardDuty in Splunk](https://www.chrisfarris.com/post/reinforce-threat-hunting/)
 * [SEC339 at re:Invent 2019](https://www.chrisfarris.com/post/reinvent2019-sec339/)
