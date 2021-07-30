@@ -3,7 +3,7 @@ Threat hunting – Making the jump from alert-based investigation to threat hunt
 
 When thinking about threat hunting, we needs to create a threat hunting strategy for the environment they will be operating in.  In this case, AWS,  executing at scale with efficiency, is critical.  Capabilities to hunt are also tied to the [teams maturity](http://detect-respond.blogspot.com/2015/10/a-simple-hunting-maturity-model.html). 
 
-First, let's define threat hunting…its more than just looking at a SEIM or randomly digging through logs.  It is a proactive, hypothesis-driven approach to detecting unknown threats (detect threats not captured by your deployed security tools).  Hunting requires the input of human analysts, often driven by automation to address scale to find what is missed by automated reactive alerting systems.  Hunting leverages diverse types of data to include the cloud service provider sources.  The following are AWS Security Sources:
+First, let's define threat hunting…its more than just looking at a SIEM or randomly digging through logs.  It is a proactive, hypothesis-driven approach to detecting unknown threats (detect threats not captured by your deployed security tools).  Hunting requires the input of human analysts, often driven by automation to address scale to find what is missed by automated reactive alerting systems.  Hunting leverages diverse types of data to include the cloud service provider sources.  The following are AWS Security Sources:
 * AWS CloudTrail  
 * Amazon CloudWatch Events  
 * Amazon GuardDuty Findings  
