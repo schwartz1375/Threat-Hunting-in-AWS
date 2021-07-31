@@ -41,6 +41,12 @@ This query selects CloudTrail records that contain API Calls that may be indicat
 ## NOTICE
 This is by no means an exhaustive list of API calls (for example, one might want to add UpdateFunctionCode)! I recommend understanding the environment risks and threats (threat modeling) to determine what APIs calls should be considered in scope. Second, the results from these tools should NOT be used as the sole criteria for deciding if one AWS Account has been compromised.
 
+## Additional Tools
+* [A List of AWS Security Tools by toniblyx](https://github.com/toniblyx/my-arsenal-of-aws-security-tools)
+* [CloudTracker](https://github.com/duo-labs/cloudtracker) "helps you find over-privileged IAM users and roles by comparing CloudTrail logs with current IAM policies."
+* [Parliament](https://github.com/duo-labs/parliament) "is an AWS IAM linting library"
+
+
 ## Additional Resources
 * [AWS Incident Response with Athena](https://easttimor.github.io/aws-incident-response/)
 * [Threat Hunting with CloudTrail and GuardDuty in Splunk](https://www.chrisfarris.com/post/reinforce-threat-hunting/)
