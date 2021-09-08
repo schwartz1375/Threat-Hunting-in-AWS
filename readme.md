@@ -46,9 +46,13 @@ This is by no means an exhaustive list of API calls (for example, one might want
 * [CloudTracker](https://github.com/duo-labs/cloudtracker) "helps you find over-privileged IAM users and roles by comparing CloudTrail logs with current IAM policies."
 * [Parliament](https://github.com/duo-labs/parliament) "is an AWS IAM linting library"
 
+## Selected AWS Blog Posts
+* [Building end-to-end AWS DevSecOps CI/CD pipeline with open source SCA, SAST and DAST tools](https://aws.amazon.com/blogs/devops/building-end-to-end-aws-devsecops-ci-cd-pipeline-with-open-source-sca-sast-and-dast-tools/)
+* [Ransomware mitigation: Top 5 protections and recovery preparation actions](https://aws.amazon.com/blogs/security/ransomware-mitigation-top-5-protections-and-recovery-preparation-actions/)
 
 ## Additional Resources
 * [AWS Incident Response with Athena](https://easttimor.github.io/aws-incident-response/)
 * [Threat Hunting with CloudTrail and GuardDuty in Splunk](https://www.chrisfarris.com/post/reinforce-threat-hunting/)
 * [SEC339 at re:Invent 2019](https://www.chrisfarris.com/post/reinvent2019-sec339/)
 * [Threatmodel for AWS S3](https://github.com/trustoncloud/threatmodel-for-aws-s3)
+
