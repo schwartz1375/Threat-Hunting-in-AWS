@@ -38,7 +38,7 @@ python3 ./searchCT.py awsprofile 5
 ## CloudWatch_Logs_Insights_query.txt
 This query selects CloudTrail records that contain API Calls that may be indicative of AWS Account Compromise. This is based on multiple concepts and insights from AWS Escalation methods posted by [Rhino Security Labs](https://rhinosecuritylabs.com/aws/aws-privilege-escalation-methods-mitigation/) 
 
-## NOTICE
+## Caution
 This is by no means an exhaustive list of API calls (for example, one might want to add UpdateFunctionCode)! I recommend understanding the environment risks and threats (threat modeling) to determine what APIs calls should be considered in scope. Second, the results from these tools should NOT be used as the sole criteria for deciding if one AWS Account has been compromised.
 
 ## Additional Tools
