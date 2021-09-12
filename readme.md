@@ -55,4 +55,5 @@ This is by no means an exhaustive list of API calls (for example, one might want
 * [Threat Hunting with CloudTrail and GuardDuty in Splunk](https://www.chrisfarris.com/post/reinforce-threat-hunting/)
 * [SEC339 at re:Invent 2019](https://www.chrisfarris.com/post/reinvent2019-sec339/)
 * [Threatmodel for AWS S3](https://github.com/trustoncloud/threatmodel-for-aws-s3)
+* [AWS SIGv4 and SIGv4A](https://shufflesharding.com/posts/aws-sigv4-and-sigv4a)
 
