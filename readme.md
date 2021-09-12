@@ -47,7 +47,8 @@ This is by no means an exhaustive list of API calls (for example, one might want
 * [Parliament](https://github.com/duo-labs/parliament) "is an AWS IAM linting library"
 
 ## Selected AWS Blog Posts
-* [Building end-to-end AWS DevSecOps CI/CD pipeline with open source SCA, SAST and DAST tools](https://aws.amazon.com/blogs/devops/building-end-to-end-aws-devsecops-ci-cd-pipeline-with-open-source-sca-sast-and-dast-tools/)
+* [Building end-to-end AWS DevSecOps CI/CD pipeline with open source SCA, SAST and DAST tools](https://aws.amazon.com/blogs/devops/building-end-to-end-aws-devsecops-ci-cd-pipeline-with-open-source-sca-sast-and-dast-tools/)  
+    * Online training via [DevAx::academy](https://workshops.devax.academy/security-for-developers/)
 * [Ransomware mitigation: Top 5 protections and recovery preparation actions](https://aws.amazon.com/blogs/security/ransomware-mitigation-top-5-protections-and-recovery-preparation-actions/)
 
 ## Additional Resources
