@@ -6,7 +6,8 @@ When thinking about threat hunting, we needs to create a threat hunting strategy
 First, let's define threat hunting…its more than just looking at a SIEM or randomly digging through logs.  It is a proactive, hypothesis-driven approach to detecting unknown threats (detect threats not captured by your deployed security tools).  Hunting requires the input of human analysts, often driven by automation to address scale to find what is missed by automated reactive alerting systems.  Hunting leverages diverse types of data to include the cloud service provider sources.  The following are AWS Security Sources:
 * AWS CloudTrail  
 * Amazon CloudWatch Events  
-* Amazon GuardDuty Findings  
+* Amazon GuardDuty Findings
+    * [GuardDuty Finding Types](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-active.html)
 * Amazon VPC Flow Logs  
 * Amazon Inspector Findings  
 * DNS Logs 
