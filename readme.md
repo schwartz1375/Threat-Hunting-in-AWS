@@ -58,4 +58,5 @@ This is by no means an exhaustive list of API calls (for example, one might want
 * [SEC339 at re:Invent 2019](https://www.chrisfarris.com/post/reinvent2019-sec339/)
 * [Threatmodel for AWS S3](https://github.com/trustoncloud/threatmodel-for-aws-s3)
 * [AWS SIGv4 and SIGv4A](https://shufflesharding.com/posts/aws-sigv4-and-sigv4a)
+* [A Simple Parser for AWS S3 Logs](https://github.com/joswr1ght/s3logparse)
 
