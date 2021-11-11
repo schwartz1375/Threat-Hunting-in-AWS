@@ -46,6 +46,7 @@ This is by no means an exhaustive list of API calls (for example, one might want
 * [A List of AWS Security Tools by toniblyx](https://github.com/toniblyx/my-arsenal-of-aws-security-tools)
 * [CloudTracker](https://github.com/duo-labs/cloudtracker) "helps you find over-privileged IAM users and roles by comparing CloudTrail logs with current IAM policies."
 * [Parliament](https://github.com/duo-labs/parliament) "is an AWS IAM linting library"
+* [A Simple Parser for AWS S3 Logs](https://github.com/joswr1ght/s3logparse)
 
 ## Selected AWS Blog Posts
 * [Building end-to-end AWS DevSecOps CI/CD pipeline with open source SCA, SAST and DAST tools](https://aws.amazon.com/blogs/devops/building-end-to-end-aws-devsecops-ci-cd-pipeline-with-open-source-sca-sast-and-dast-tools/)  
@@ -58,5 +59,5 @@ This is by no means an exhaustive list of API calls (for example, one might want
 * [SEC339 at re:Invent 2019](https://www.chrisfarris.com/post/reinvent2019-sec339/)
 * [Threatmodel for AWS S3](https://github.com/trustoncloud/threatmodel-for-aws-s3)
 * [AWS SIGv4 and SIGv4A](https://shufflesharding.com/posts/aws-sigv4-and-sigv4a)
-* [A Simple Parser for AWS S3 Logs](https://github.com/joswr1ght/s3logparse)
+
 
