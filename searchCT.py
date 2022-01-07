@@ -59,9 +59,10 @@ def main():
 			'AuthorizeSecurityGroupEgress', 'RevokeSecurityGroupEgress', 'CreateSecurityGroup', 'DeleteSecurityGroup', 'DeleteNetworkAclEntry',
 			'StopLogging', 'DeleteTrail', 'UpdateTrail', 'MissingTrail', 'PutEventSelectors', 'DeleteGroupPolicy', 'DeleteRole', 
 			'DeleteRolePolicy', 'DeleteUserPolicy', 'PutGroupPolicy', 'PutRolePolicy', 'PutUserPolicy', 'CreatePolicyVersion', 
-			'SetDefaultPolicyVersion', 'CreateAccessKey', 'CreateLoginProfile', 'UpdateLoginProfile', 'AttachGroupPolicy', 
+			'SetDefaultPolicyVersion', 'CreateUser', 'CreateAccessKey', 'CreateLoginProfile', 'UpdateLoginProfile', 'AttachGroupPolicy', 
 			'AttachRolePolicy', 'AddUserToGroup', 'UpdateAssumeRolePolicy', 'DeleteDetector', 'DeleteMembers', 'DisassociateFromMasterAccount',
-			'DisassociateMembers', 'StopMonitoringMembers', 'DeactivateMFADevice', 'DeleteRolePermissionsBoundary']
+			'DisassociateMembers', 'StopMonitoringMembers', 'DeleteIPSet', 'DeleteThreatIntelSet', 'UpdateIPSet', 'UpdateThreatIntelSet',
+			'ModifyAccount', 'ModifyBilling', 'ModifyPaymentMethods', 'DeactivateMFADevice', 'DeleteRolePermissionsBoundary']
 
 	print("Attempting to get events from CloudTrail")
 	for eventName in events:

@@ -1,4 +1,5 @@
 filter (
+      #VPC/ACL/Security groups
       eventName="AttachInternetGateway" or 
       eventName="CreateVpcPeeringConnection" or
       eventName="AcceptVpcPeeringConnection" or
@@ -20,26 +21,29 @@ filter (
       eventName="RevokeSecurityGroupEgress" or 
       eventName="CreateSecurityGroup" or 
       eventName="DeleteSecurityGroup" or 
-      eventName="DeleteNetworkAclEntry" or 
+      eventName="DeleteNetworkAclEntry" or
+      #CloudTrail 
       eventName="StopLogging" or 
       eventName="DeleteTrail" or 
       eventName="UpdateTrail" or 
       eventName="MissingTrail" or 
       eventName="PutEventSelectors" or 
+      #IAM users & policy
       eventName="DeleteGroupPolicy" or 
       eventName="DeleteRole" or 
       eventName="DeleteRolePolicy" or 
       eventName="DeleteUserPolicy" or 
       eventName="PutGroupPolicy" or 
       eventName="PutRolePolicy" or 
-      eventName="PutUserPolicy" or 
+      eventName="PutUserPolicy" or
       #Privilege-escalation Rhino Security Labs
       eventName="CreatePolicyVersion" or  
       eventName="SetDefaultPolicyVersion" or 
+      eventName="CreateUser" or
       eventName="CreateAccessKey" or 
       eventName="CreateLoginProfile" or 
       eventName="UpdateLoginProfile" or 
-      eventname="AttachUserPolicy" or 
+      eventName="AttachUserPolicy" or 
       eventName="AttachGroupPolicy" or 
       eventName="AttachRolePolicy" or 
       eventName="AddUserToGroup" or 
@@ -50,6 +54,14 @@ filter (
       eventName="DisassociateFromMasterAccount" or
       eventName="DisassociateMembers" or
       eventName="StopMonitoringMembers" or
+      eventName="DeleteIPSet" or
+      eventName="DeleteThreatIntelSet" or
+      eventName="UpdateIPSet" or
+      eventName="UpdateThreatIntelSet" or
+      #Billing/Account Information
+      eventName="ModifyAccount" or
+      eventName="ModifyBilling" or
+      eventName="ModifyPaymentMethods" or
       #General Hygiene 
       eventName="DeactivateMFADevice" or 
       eventName="DeleteRolePermissionsBoundary") and sourceIPAddress not like /([a-z0-9]+[.])*amazonaws[.]com$/ | 
