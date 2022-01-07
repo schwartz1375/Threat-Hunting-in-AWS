@@ -1,0 +1,9 @@
+In addition to [Security in Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security.html), consider monitoring and alerting on the APIs listed below. AWS also provides multiple tools  to monitor specific APIs such as CloudWatch Events, EventBridge (to take actions when alarms change state), and Amazon GuardDuty.
+
+|**EC2 API**|**Reason to consider it & common response**|
+| ----- | ----------------------------------------- |
+|[RunInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunInstances.html) | Starting of new resources in unexpected environments may be indication of malicious activity.  Check the instance are supposed to be started & what IAM principal started them|
+|CreationInstances| Starting of new resources in unexpected environments or outside of expected autoscaling /changes maybe an indication of malicious activity.  Check the instances are supposed to be created & what IAM principal created them |
+|LaunchInstances|Starting of new resources in unexpected environments or outside of expected autoscaling/changes may be an indication of malicious activity.  Check the instances are supposed to be created & what IAM principal launched them.|
+|[TerminateInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TerminateInstances.html)|Unexpected termination of instance may be an indication of malicious activity.  Check the instances are supposed to be created & what IAM principal terminated them|
+|[CopyImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopyImage.html)|Copying an AMI between regions is could be an indication of malicious attempts at exfiltration in situation where multiple regions are not in use.  Check the instances are supposed to be created & what IAM principal initiated the copy|
