@@ -28,7 +28,7 @@ For more examples see the Medium article on the [Quick and Dirty CloudTrail Thre
 
 Note that a GuardDuty finding or CloudTrail log entry showing a HIDDEN_DUE_TO_SECURITY_REASONS is because AWS doesn’t log username for failed sign-in due to an incorrect user name. 
 
-## searchCT.py
+## [searchCT.py](searchCT.py)
 An example python script that leverages [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) to lookup CloudTrail events that are potential signs of an account compromise (in a specific region based on the profile) within the last 90 days. 
 
 Examples
@@ -36,7 +36,7 @@ Examples
 python3 ./searchCT.py awsprofile 5
 ```
 
-## CloudWatch_Logs_Insights_query.txt
+## [CloudWatch_Logs_Insights_query.txt](CloudWatch_Logs_Insights_query.txt)
 This query selects CloudTrail records that contain API Calls that may be indicative of AWS Account Compromise. This is based on multiple concepts and insights from AWS Escalation methods posted by [Rhino Security Labs](https://rhinosecuritylabs.com/aws/aws-privilege-escalation-methods-mitigation/) 
 
 ## Caution
