@@ -15,7 +15,7 @@ First, let's define threat hunting…its more than just looking at a SIEM or ran
 ## Key AWS tools 
 * [AWS CloudTrail](https://aws.amazon.com/cloudtrail/) "provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services." 
 * [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) provides dashboards and alerting. 
-* [Amazon Athena](https://aws.amazon.com/athena/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc) Athena is serverless offering that provides “an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL”. 
+* [Amazon Athena](https://aws.amazon.com/athena/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc) Athena is serverless offering that provides “an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL”.  AWS has also published information on "[How do I automatically create tables in Amazon Athena to search through AWS CloudTrail logs?](https://aws.amazon.com/premiumsupport/knowledge-center/athena-tables-search-cloudtrail-logs/)"
 
 ## Threat Hunting CloudTrail using the CLI 
 To parse CloudTrail logs, the following tools are needed [jq](https://stedolan.github.io/jq/), gunzip, uniq and sort.   
